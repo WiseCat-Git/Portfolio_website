@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Lopez's Portfolio</title>
+    <link rel="stylesheet" href="master.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body id="top-of-document">
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-div">
+                    <img class="hero" src="images/IMG_20240615_160950.jpg" alt="Felipe Lopez">
+                </div>
+                <div class="hero-text">
+                    <p class="page-title">Felipe Lopez</p>
+                    <h2>Senior Analyst | Machine Learning Specialist | Software Developer</h2>
+                    <p class="bio-block">I am an accomplished data analyst/engineer and software developer
+                        with a strong background in strategic leadership and management.
+                        With over ten years of experience in collaborating/transforming
+                        businesses through digital marketing, data science, data engineering
+                        and software engineering, I excel at developing innovative solutions
+                        that drive business growth.
+                        My expertise spans various industries, where I have successfully
+                        implemented data-driven strategies and solutions.</p>
+                </div>
+            </div>
+            <div class="block-separator">
+                <hr class="dot-separator">
+            </div>
+        </section>
+        <section id="portfolio" class="centered-section">
+            <h2>Portfolio</h2>
+            <div class="github-link">
+                <a class="btn btn-primary" href="https://github.com/WiseCat-Git" target="_blank">
+                    <i class="fab fa-github"></i> Visit my GitHub
+                </a>
+            </div>
+            <h2>Brands I've Worked With</h2>
+            <div class="carousel">
+                <div class="carousel-inner" id="carouselInner">
+                    <img src="images/publicis-groupe6313.jpg" alt="Publicis Groupe">
+                    <img src="images/c6AR6pnG_400x400.png" alt="Huge">
+                    <img src="images/png-transparent-google-logo-google-search-google-play-google-text-logo-number-thumbnail.png" alt="Google">
+                    <img src="images/El-Pais-Cali.png" alt="El Pais Cali">
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Floating scroll to top navigator -->
+    <div class="to-top-navigator" style="opacity: 0.8;">
+        <div class="to-top-cloud" aria-label="Ascend to the top!" aria-hidden="true">
+            <a href="javascript:scrollToAnchor('top-of-document')" data-toggle="tooltip" data-placement="left" title="" onclick="javascript:toolTipReset()" data-original-title="Scroll to the top"><i class="fas fa-plane-departure"></i></a>
+        </div>
+        <div>
+            <a href="javascript:scrollToPreviousSection()">
+                <span class="tcon-indicator" aria-label="Scroll to previous section outside of viewport" aria-hidden="true" data-toggle="tooltip" data-placement="left" title="" onclick="javascript:toolTipReset()" data-original-title="Scroll to previous section outside of viewport">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="tcon-svgchevron" viewBox="0 0 30 58">
+                        <path class="a1" d="M3,13l13-10l13,10"></path>
+                        <path class="a2" d="M3,33l13-10l13,10"></path>
+                        <path class="a3" d="M3,53l13-10l13,10"></path>
+                    </svg>
+                </span>
+            </a>
+        </div>
+        <div>
+            <a href="javascript:scrollToAnchor('bio-section')" data-toggle="tooltip" data-placement="left" title="" onclick="javascript:toolTipReset()" data-original-title="Jump to Bio"><i class="fas fa-star"></i></a>
+        </div>
+    </div>
+
+    <!-- Floating scroll down navigator -->
+    <div class="scroll-down-navigator" style="opacity: 0.8;">
+        <div>
+            <a href="javascript:scrollToNextSection()" data-toggle="tooltip" data-placement="left" title="" onclick="javascript:toolTipReset()" data-original-title="Scroll to next section outside of viewport">
+                <span class="tcon-indicator" aria-label="Scroll to next section outside of viewport" aria-hidden="true">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="tcon-svgchevron" viewBox="0 0 30 58">
+                        <path class="a3" d="M3,3l13,10l13-10"></path>
+                        <path class="a2" d="M3,23l13,10l13-10"></path>
+                        <path class="a1" d="M3,43l13,10l13-10"></path>
+                    </svg>
+                </span>
+            </a>
+        </div>
+        <div class="scroll-down-plane" aria-label="Descend to the bottom!" aria-hidden="true">
+            <a href="javascript:scrollToAnchor('bottom-of-document')" data-toggle="tooltip" data-placement="left" title="" onclick="javascript:toolTipReset()" data-original-title="Scroll to the bottom"><i class="fas fa-plane-arrival"></i></a>
+        </div>
+        <div>
+            <a href="javascript:scrollToAnchor('contact')" data-toggle="tooltip" data-placement="left" title="" onclick="javascript:toolTipReset()" data-original-title="Jump to Contact"><i class="fas fa-star"></i></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Felipe Lopez's Portfolio</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
